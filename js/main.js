@@ -115,7 +115,7 @@ console.log(person)
 
 
 
-// bracket notation
+// bracket notation - use quotations
 console.log(`my first name is ${person['first']}`);
 
 // dot notation
@@ -147,7 +147,7 @@ console.log(mixedArr[2].a)
 
 
 
-// let - allows us to declare a variable similar as var **let is block-scoped VS var is global-scoped**
+// let - allows us to declare a variable similar as var **let is block-scoped VS var is fn-scoped**
 // var is a global scope no matter what EXCEPT for functions
 let myCity = 'Chicago';
 console.log(myCity);
@@ -188,7 +188,7 @@ const cities = ['Chicago', 'New York', 'San Diego']
 
 console.log(cities);
 
-cities[1] = 'San Francisco';
+cities[1] = 'San Francisco'; // you CAN change items within a constant variable, as long as the variable itself is not changed completely
 
 console.log(cities);
 
@@ -218,7 +218,7 @@ console.log(newPerson);
 // 
 
 
-
+// console.clear()
 
 /*
     Basic math ops
@@ -261,7 +261,7 @@ console.log(square);
 
 
 //  modulo
-let remainder = 19 % 4;
+let remainder = 17 % 4;
 console.log(remainder);
 remainder %= 2; // remainder = remainder % 2
 console.log(remainder);
@@ -298,6 +298,8 @@ console.log(5 != 5);
 console.log(5 == '5'); // this gives true bc js chekcs if it can add them ALLOWS TYPE CONVERSION
 console.log(5 === '5'); // triple equal sign checks for equality DOES NOT ALLOW TYPE CONVERSION
 
+
+console.log('booleans check');
 console.log(1 == true);
 console.log(0 == true);
 
@@ -355,7 +357,7 @@ if (newNumber > 65){
 console.log('End');
 
 // ternary operator - (condition) ? value if true : value if false
-// age_group =  'Adult' if age > 18 else 'Child'
+// age_group =  'Adult' if age > 17 else 'Child'
 
 let ageGroup = (newNumber > 17) ? 'Adult' : 'Child';
 console.log(ageGroup);
@@ -394,7 +396,6 @@ console.log('Loop has started');
 for (let i = 0; i <= 20; i++){
     console.log(i)
 };
-
 console.log('Loop has ended');
 
 
@@ -405,7 +406,7 @@ for (let i = 0; i < colors.length; i++){
 };
 
 
-// for...in -- used to loop over the values of an object
+// for...in -- used to loop over the values of an object or index and value of array
 let teams = {
     mlb: 'Red Sox',
     nba: 'Lakers', 
